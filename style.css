@@ -1,0 +1,140 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f3f6fb;
+    color: #263247;
+    line-height: 1.7;
+}
+
+.site-header {
+    background: #172b4d;
+    color: white;
+    text-align: center;
+    padding: 30px 20px 0;
+}
+
+.site-header h1 {
+    font-size: 2rem;
+    letter-spacing: 0.5px;
+}
+
+.tagline {
+    color: #cbd6e8;
+    margin: 5px 0 22px;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 12px 22px;
+    border-radius: 8px 8px 0 0;
+    transition: background 0.2s ease;
+}
+
+nav a:hover,
+nav a.active {
+    background: #31558a;
+}
+
+.container {
+    width: min(900px, 90%);
+    margin: 42px auto;
+}
+
+.hero {
+    background: linear-gradient(135deg, #31558a, #5486bd);
+    color: white;
+    padding: 48px 42px;
+    border-radius: 16px;
+    box-shadow: 0 12px 30px rgba(23, 43, 77, 0.13);
+}
+
+.eyebrow {
+    font-size: 0.78rem;
+    font-weight: bold;
+    letter-spacing: 2px;
+    color: #d9e8ff;
+    margin-bottom: 10px;
+}
+
+.hero h2 {
+    font-size: 2rem;
+    margin-bottom: 12px;
+}
+
+.hero p {
+    max-width: 650px;
+}
+
+.button {
+    display: inline-block;
+    margin-top: 22px;
+    padding: 11px 20px;
+    background: white;
+    color: #244675;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 7px;
+}
+
+.button:hover {
+    background: #e8f0fc;
+}
+
+.content-card {
+    background: white;
+    margin-top: 26px;
+    padding: 30px;
+    border-radius: 14px;
+    box-shadow: 0 5px 20px rgba(25, 45, 75, 0.06);
+}
+
+.content-card h2,
+.content-card h3 {
+    color: #203e68;
+    margin-bottom: 10px;
+}
+
+.content-card h3 {
+    margin-top: 18px;
+}
+
+.content-card p {
+    margin-bottom: 12px;
+}
+
+footer {
+    text-align: center;
+    padding: 22px;
+    color: #6b7789;
+    font-size: 0.9rem;
+}
+
+@media (max-width: 600px) {
+    .site-header h1 {
+        font-size: 1.6rem;
+    }
+
+    .hero {
+        padding: 34px 24px;
+    }
+
+    .hero h2 {
+        font-size: 1.6rem;
+    }
+
+    .content-card {
+        padding: 23px;
+    }
+}
